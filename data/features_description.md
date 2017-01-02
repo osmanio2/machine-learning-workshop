@@ -1,0 +1,45 @@
+# Feature descriptions
+
+- Money based:
+  - `total_spent`
+    - Description: The total amount spent per `CustomerID`
+    - Unit: £
+  - `total_refunded`
+    - Description: The total amount that was refunded per `CustomerID`
+    - Unit: £
+  - `min_spent`
+    - Description: The `InvoiceNo` with the minimum total spent per `CustomerID`
+    - Unit: £
+  - `mean_spent`
+    - Description: The average total spent per `InvoiceNo` per `CustomerID`
+    - Unit: £
+  - `max_spent`
+    - Description: The `InvoiceNo` with the maximum total spent per `CustomerID`
+    - Unit: £
+  - `balance`
+    - Description: The `total_spent` - `total_refunded` per `CustomerID`
+    - Unit: £
+- Item based:
+  - `total_items`
+    - Description: The total number of individual items bought per `CustomerID`
+    - Unit: #
+- Order based:
+  - `n_orders`
+    - Description: The total number of `InvoiceNo` per `CustomerID`
+    - Unit: #
+  - `n_weekend_orders`
+    - Description: The total number of `InvoiceNo` placed during weekend days per `CustomerID`
+    - Unit: #
+  - `n_weekday_orders`
+    - Description: The total number of `InvoiceNo` placed during weekdays per `CustomerID`
+    - Unit: #
+  - `n_work_orders`
+    - Description: The total number of `InvoiceNo` placed during working hours per `CustomerID`
+    - Unit: days
+  - `n_afterwork_orders`
+    - Description: The total number of `InvoiceNo` placed after working hours per `CustomerID`
+    - Unit: days
+- Time based:
+  - `time_between_orders`
+    - Description: The average time between `InvoiceNo`s per `CustomerID`
+    - Unit: days
