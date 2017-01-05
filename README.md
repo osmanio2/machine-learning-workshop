@@ -4,7 +4,7 @@ The workshop is based on Anaconda
 
 Extra libraries are required: plotly, seaborn
 
-The contains of the workshop:
+The contents of the workshop:
 
 * Pre-processing & Feature Extraction
   * Pre-processing and visualisation
