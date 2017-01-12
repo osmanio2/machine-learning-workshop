@@ -3,3 +3,5 @@ https://archive.ics.uci.edu/ml/datasets/User+Knowledge+Modeling
 https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption
 https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008
 https://archive.ics.uci.edu/ml/datasets/Facebook+metrics
+times = [datetime.utcfromtimestamp((np.datetime64(X[i,0]) - np.datetime64('1970-01-01T00:00:00Z')) / np.timedelta64(1, 's'))
+         for i in range(X.shape[0])]
